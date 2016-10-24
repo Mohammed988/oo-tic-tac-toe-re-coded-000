@@ -1,5 +1,4 @@
 class TicTacToe
-
    WIN_COMBINATIONS = [
     [0,1,2],
     [3,4,5],
@@ -8,8 +7,7 @@ class TicTacToe
     [1,4,7],
     [2,5,8],
     [0,4,8],
-    [6,4,2]
-  ]
+    [6,4,2]]
 
 def initialize
     @board = Array.new(9, " ")
@@ -42,7 +40,7 @@ def initialize
       turn
     end
     move(input, current_player)
-    #display_board
+
   end
 
   def valid_move?(input)
